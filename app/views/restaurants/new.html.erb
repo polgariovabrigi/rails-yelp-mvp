@@ -1,0 +1,15 @@
+<h1>Submit new restaurants to our portfolio</h1>
+
+<ul class = "list-group" style ="list-style: none padding: 20px">
+<%= form_for(@restaurant) do |f| %>
+<li>  <%= f.label :name %>
+  <%= f.text_field :name %><li>
+ <li>  <%= f.label :address %>
+  <%= f.text_field :address %><li>
+ <li>  <%= f.label :phone_number %>
+  <%= f.text_field :phone_number %><li>
+ <li>  <%= f.label :category %>
+  <%= f.text_field :category  %><li>
+  <%= f.submit %>
+<% end %>
+</ul>
